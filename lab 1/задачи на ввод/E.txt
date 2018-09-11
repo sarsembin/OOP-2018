@@ -1,0 +1,17 @@
+//package com.company;
+import java.util.Scanner;
+ 
+import static java.lang.Math.sqrt;
+ 
+public class Main {
+ 
+    public static void main(String[] args) {
+    Scanner reader = new Scanner(System.in);
+    int a = reader.nextInt();
+    int b = reader.nextInt();
+    int s = a * b;
+    int s1 = s % 109;
+    int s2 = s1 + 109;
+    System.out.print(s2 % 109);
+    }
+}

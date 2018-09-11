@@ -1,0 +1,14 @@
+//package com.company;
+import java.util.Scanner;
+ 
+import static java.lang.Math.sqrt;
+ 
+public class Main {
+ 
+    public static void main(String[] args) {
+    Scanner reader = new Scanner(System.in);
+    int s = reader.nextInt();
+    System.out.print("The next number for the number " + s + " is " + ( s + 1)+ ".\n");
+    System.out.print("The previous number for the number " + s + " is " + ( s - 1) + ".\n");
+    }
+}

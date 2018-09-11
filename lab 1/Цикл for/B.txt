@@ -1,0 +1,20 @@
+//package com.company;
+import java.util.Scanner;
+ 
+import static java.lang.Math.sqrt;
+ 
+public class Main {
+ 
+    public static void main(String[] args) {
+    Scanner reader = new Scanner(System.in);
+    int a = reader.nextInt();
+    int b = reader.nextInt();
+    int c = reader.nextInt();
+    int d = reader.nextInt();
+    for (int i = a ; i <= b ; i++){
+        if (i % d == c){
+            System.out.print(i + " ");
+        }
+    }
+    }
+}
