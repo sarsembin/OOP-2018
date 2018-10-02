@@ -78,6 +78,16 @@ class Manager extends Employee{
         this.team = team;
         bonus = team.size();
     }
+    public void addTeam(Employee member){
+        team.add(member);
+    }
+    public Employee removeTeam(){
+        return team.remove(team.size()-1);
+    }
+    public double calculateBonus(){
+        return team.size();
+    }
+
 }
 public class Main {
 

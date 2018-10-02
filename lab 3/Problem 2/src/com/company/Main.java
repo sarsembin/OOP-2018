@@ -13,7 +13,6 @@ abstract class Shapes3D{
         this.width = width;
         this.heigth = heigth;
     }
-
     public double getHeigth() {
         return heigth;
     }
@@ -30,29 +29,27 @@ abstract class Shapes3D{
 }
 class Cylinder extends Shapes3D{
     private double radius;
+    private double heigth;
     public Cylinder(){
-        super();
         radius = 0;
     }
     public Cylinder(double radius, double heigth){
-        super(radius*2, radius*2, heigth);
         this.radius = radius;
+        this.heigth = heigth;
     }
     public double findVolume(){
-        return getHeigth() * ( ((radius * radius) * 3.14 ) );
+        return heigth * ( ((radius * radius) * 3.14 ) );
     }
     public double findSurfaceArea(){
-        return 2 * 3.14 * (radius) * getHeigth();
+        return 2 * 3.14 * (radius) * heigth;
     }
 }
 class Sphere extends Shapes3D{
     private double radius;
     public Sphere(){
-        super();
         radius = 0;
     }
     public Sphere(double radius){
-        super(radius*2, radius*2, radius*2);
         this.radius = radius;
     }
     public double findVolume(){
@@ -63,17 +60,18 @@ class Sphere extends Shapes3D{
     }
 }
 class Cube extends Shapes3D{
+    private double length;
     public Cube(){
-        super();
+        this.length = 0;
     }
     public Cube(double length){
-        super(length, length, length);
+        this.length = length;
     }
     public double findVolume(){
-        return getLength()* getLength()* getLength();
+        return length*length*length;
     }
     public double findSurfaceArea(){
-        return getLength() * getLength() * 6;
+        return length * length * 6;
     }
 }
 public class Main {
