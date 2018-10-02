@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8280ca8e-d580-48c9-b101-f7c9099e6051" name="Default Changelist" comment="" />
+    <list default="true" id="ddf8a251-36de-43af-8951-bf6e5396eef4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../lab 2/Problem 1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab 2/Problem 1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab 2/Problem 1/out/production/Problem 1/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab 2/Problem 1/out/production/Problem 1/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab 2/Problem 1/out/production/Problem 1/com/company/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab 2/Problem 1/out/production/Problem 1/com/company/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab 2/Problem 1/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab 2/Problem 1/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab 2/Problem 4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab 2/Problem 4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab 2/Problem 4/out/production/Problem 4/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab 2/Problem 4/out/production/Problem 4/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab 2/Problem 4/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab 2/Problem 4/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab 2/Problem 5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab 2/Problem 5/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab 2/Problem 5/out/production/Problem 5/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab 2/Problem 5/out/production/Problem 5/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab 2/Problem 5/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab 2/Problem 5/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab 2/Problem 6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab 2/Problem 6/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,28 +22,25 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FUSProjectUsageTrigger">
-    <session id="-402764329">
+    <session id="42462286">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="2" />
-          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.8" value="1" />
           <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="578" />
+          <entry key="java" value="912" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="578" />
+          <entry key="JAVA" value="912" />
         </counts>
       </usages-collector>
-      <usages-collector id="statistics.file.extensions.open" />
-      <usages-collector id="statistics.file.types.open" />
-      <usages-collector id="statistics.vcs.git.usages" />
     </session>
   </component>
   <component name="FileEditorManager">
@@ -39,10 +48,19 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="-135">
+              <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#395#396#0" expanded="true" />
+                <element signature="e#424#425#0" expanded="true" />
+                <element signature="e#457#458#0" expanded="true" />
+                <element signature="e#486#487#0" expanded="true" />
+                <element signature="e#518#519#0" expanded="true" />
+                <element signature="e#546#547#0" expanded="true" />
+                <element signature="e#1568#1569#0" expanded="true" />
+                <element signature="e#1617#1618#0" expanded="true" />
+                <element signature="e#1896#1897#0" expanded="true" />
+                <element signature="e#1948#1949#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -61,8 +79,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="336" />
-    <option name="y" value="82" />
+    <option name="x" value="338" />
+    <option name="y" value="88" />
     <option name="width" value="1400" />
     <option name="height" value="949" />
   </component>
@@ -72,14 +90,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536650585647" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538413032167" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -96,7 +114,7 @@
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
-      <module name="Problem 6" />
+      <module name="Problem 2" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -110,16 +128,16 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8280ca8e-d580-48c9-b101-f7c9099e6051" name="Default Changelist" comment="" />
-      <created>1536572943913</created>
+      <changelist id="ddf8a251-36de-43af-8951-bf6e5396eef4" name="Default Changelist" comment="" />
+      <created>1538407649470</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1536572943913</updated>
+      <updated>1538407649470</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="336" y="82" width="1400" height="949" extended-state="0" />
+    <frame x="338" y="88" width="1400" height="949" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25373134" />
@@ -155,10 +173,19 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="-135">
+          <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#395#396#0" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#457#458#0" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#518#519#0" expanded="true" />
+            <element signature="e#546#547#0" expanded="true" />
+            <element signature="e#1568#1569#0" expanded="true" />
+            <element signature="e#1617#1618#0" expanded="true" />
+            <element signature="e#1896#1897#0" expanded="true" />
+            <element signature="e#1948#1949#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -25,7 +25,9 @@ class Student{
     public void GetYear(){
         System.out.print(year_of_study + "\n");
     }
-
+    public void incrementYear(){
+        year_of_study++;
+    }
 }
 public class Main {
 
@@ -35,5 +37,8 @@ public class Main {
         student.GetYear();
         student.SetName("Dodo");
         student.GetName();
+        student.incrementYear();
+        student.incrementYear();
+        student.GetYear();
     }
 }

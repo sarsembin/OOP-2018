@@ -37,8 +37,14 @@ class Time{
         int t_hour = hour + t.hour;
         int t_minute = minute + t.minute;
         int t_second = second + t.second;
-        if (t_second >= 60) t_minute++;
-        if (t_minute >= 60) t_hour++;
+        if (t_second >= 60){
+            t_minute++;
+            t_second = 0;
+        }
+        if (t_minute >= 60) {
+            t_hour++;
+            t_minute = 0;
+        }
         if (t_hour >= 24) t_hour -= 24;
         Time t1 = new Time(t_hour, t_minute, t_second);
         return t1;
@@ -53,6 +59,6 @@ public class Main {
         System.out.println(t.toUniversal());
         System.out.println(t.toStandard());
         Time t2 = new Time(4, 24, 33);
-        t.add(t2);
+        System.out.println(t.add(t2).toUniversal());
     }
 }
