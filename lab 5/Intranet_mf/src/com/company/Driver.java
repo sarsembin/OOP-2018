@@ -10,15 +10,14 @@ public class Driver  {
         String username, password;
         while(true)
         {
-            System.out.println("Username: ");
+            System.out.println("Username: \ntype: (i_want_to_exit) to exit");
             username = in.next();
+            if (username.equals("i_want_to_exit")) { break; }
             System.out.println("Password: ");
             password = in.next();
-        //fine too  //System.out.println(Storage.users.containsKey(username)+ " " + Storage.users.get(username).getPassword());
-            //System.out.println(Storage.users.get(username) + ""); ///// fine
             if(Storage.users.containsKey(username) && Storage.users.get(username).getPassword().equals(password))
             {
-                run(Storage.users.get(username)); ///??????????? null pointer exception ????? why
+                run(Storage.users.get(username), username); ///??????????? null pointer exception ????? why
 
                 /*try
                 {
@@ -36,32 +35,32 @@ public class Driver  {
         }
     }
 
-    private static void run(Person user) {
+    private static void run(Person user, String username) {
         switch (user.getAccessRights())
         {
             case ADMIN:
-                runAdmin(user.getID());
+                runAdmin(username);
                 break;
             case STUDENT:
-                runStudent(user.getID());
+                runStudent(username);
                 break;
             case MANAGER:
-                runManager(user.getID());
+                runManager(username);
                 break;
             case TEACHER:
-                runTeacher(user.getID());
+                runTeacher(username);
                 break;
             case TECHSUPPORT:
-                runTechSupport(user.getID());
+                runTechSupport(username);
                 break;
         }
     }
 
-    private static void runAdmin(String id) {
+    private static void runAdmin(String MapKey) {
         while(true)
         {
-            Admin admin = Storage.admins.get(id);
-
+            Admin admin = Storage.admins.get(MapKey);
+            //System.out.println(admin.getName() + " " + admin.getSurname());
             System.out.println(String.format("Welcome, %s %s\n", admin.getName(), admin.getSurname()));
             System.out.println(" 1  - Add user");
             System.out.println(" 2  - Delete user");
@@ -105,10 +104,10 @@ public class Driver  {
         }
     }
 
-    private static void runManager(String id) {
+    private static void runManager(String MapKey) {
         while(true)
         {
-            Manager manager = Storage.managers.get(id);
+            Manager manager = Storage.managers.get(MapKey);
             System.out.println(String.format("Welcome, %s %s\n", manager.getName(), manager.getSurname()));
 
             System.out.println(" 1  - Add course");
@@ -168,10 +167,10 @@ public class Driver  {
         }
     }
 
-    private static void runTechSupport(String id) {
+    private static void runTechSupport(String MapKey) {
         while(true)
         {
-            TechSupport curTechSup = Storage.techSupportGuys.get(id);
+            TechSupport curTechSup = Storage.techSupportGuys.get(MapKey);
             System.out.println(String.format("Welcome, %s %s\n", curTechSup.getName(), curTechSup.getSurname()));
 
             System.out.println(" 1  - View all orders");
@@ -232,10 +231,10 @@ public class Driver  {
     }
 
 
-    private static void runStudent(String id) {
+    private static void runStudent(String MapKey) {
         while(true)
         {
-            Student student = Storage.students.get(id);
+            Student student = Storage.students.get(MapKey);
             System.out.println(String.format("Welcome, %s %s\n", student.getName(), student.getSurname()));
 
             System.out.println(" 1  - Register to course");
@@ -287,10 +286,10 @@ public class Driver  {
         }
     }
 
-    private static void runTeacher(String id) {
+    private static void runTeacher(String MapKey) {
         while(true)
         {
-            Teacher teacher = Storage.teachers.get(id);
+            Teacher teacher = Storage.teachers.get(MapKey);
             System.out.println(String.format("Welcome, %s %s\n", teacher.getName(), teacher.getSurname()));
 
             System.out.println(" 1  - Put mark");

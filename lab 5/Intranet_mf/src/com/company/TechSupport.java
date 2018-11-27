@@ -71,7 +71,7 @@ public class TechSupport extends Employee implements Serializable {
     }
 
     public void DoOrder(int index){
-        orders.elementAt(index).setisDoneTrue();
+        orders.elementAt(index).setIsDoneTrue();
         System.out.println("Order is successfully done!");
     }
 

@@ -299,6 +299,10 @@ public class Admin extends Person implements Serializable {
         System.out.println();
     }
 
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 
     public static HashMap<String, Admin> get() throws IOException, ClassNotFoundException{
         try{

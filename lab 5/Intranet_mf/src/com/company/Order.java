@@ -32,7 +32,7 @@ public class Order implements Serializable {
         return isDone;
     }
 
-    public void setisDoneTrue() {
+    public void setIsDoneTrue() {
         this.isDone = true;
     }
 }

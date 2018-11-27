@@ -36,12 +36,12 @@ public class Teacher extends Employee implements Serializable {
             course = (Course)pair.getKey();
             coursesFromHash.add(course);
             //id = (String)pair.getKey();
-            //course = studentsForTeacher.get(id);
+            //course = teacherCourses.get(id);
             System.out.println(String.format("[%d] - %s", pos++, course.getName()));
         }
         int choice = scanner.nextInt();
         while(choice < 1  ||  choice > coursesFromHash.size()){
-            System.out.println("Wrong input format");
+            System.out.println("Wrong format");
             System.out.println("Try again: ");
             choice = scanner.nextInt();
         }
@@ -52,7 +52,7 @@ public class Teacher extends Employee implements Serializable {
         name = scanner.next();
         System.out.println("Enter the data");
         String data = scanner.nextLine();
-        CourseFile cs = new CourseFile(name,data);
+        CourseFile cs = new CourseFile(name, data);
         course.addCourseFile(cs);
     }
 
